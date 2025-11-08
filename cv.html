@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Amer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">Amer<span class="accent">.</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html" class="active">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content">
+    <h2>Curriculum Vitae</h2>
+    <p>
+      M.Sc. Physics (Materials Science). Researcher focused on hydrogen storage,
+      DFT modeling, and machine learning applications in materials science.
+    </p>
+    <ul>
+      <li>Proficient in Wien2k, VASP workflows, Python, and ML frameworks.</li>
+      <li>Published 8+ papers in high-impact journals.</li>
+      <li>Interest: AI-assisted materials discovery.</li>
+    </ul>
+    <a href="CV_Amer_Alzoubi.pdf" class="btn" download>Download CV (PDF)</a>
+  </section>
+
+  <footer>© <span id="year"></span> Amer</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
