@@ -3,12 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amer | Materials Science & ML</title>
+  <title>Amer Alzoubi | Materials Science & ML</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="nav">
+    <div class="nav-container">
       <div class="logo">Amer<span class="accent">.</span></div>
       <nav>
         <ul>
@@ -22,29 +29,42 @@
     </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
+  <main class="hero fade-in-up">
+    <div class="hero-content">
+      <p class="greeting">Hello, I am</p>
       <h1>Amer Alzoubi</h1>
-      <p>
-        Researcher in solid-state hydrogen storage, perovskite-type hydrides,
-        and ML-assisted materials prediction. Experienced with DFT, Monte Carlo,
-        and spin models.
+      <h2 class="subtitle">Physicist & Computational Materials Scientist</h2>
+      <p class="description">
+        Specializing in solid-state hydrogen storage, perovskite-type hydrides, and ML-assisted materials prediction. Experienced in utilizing DFT, Monte Carlo simulations, and advanced spin models to accelerate material discovery.
       </p>
       <div class="btn-row">
-        <a href="research.html" class="btn">View Research</a>
-        <a href="contact.html" class="btn secondary">Contact Me</a>
+        <a href="research.html" class="btn primary-btn">
+          View Research <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="contact.html" class="btn secondary-btn">
+          Get in Touch
+        </a>
       </div>
     </div>
-  </section>
+  </main>
 
   <footer>
-    © <span id="year"></span> Amer • Materials Science & Machine Learning  
-    <div class="social">
-      <a href="https://github.com/">GitHub</a> |
-      <a href="https://scholar.google.com/">Google Scholar</a> |
-      <a href="https://linkedin.com/">LinkedIn</a>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Amer Alzoubi • Materials Science & Machine Learning</p>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://scholar.google.com/" target="_blank" aria-label="Google Scholar">
+          <i class="fas fa-graduation-cap"></i>
+        </a>
+        <a href="https://linkedin.com/in/amer-almahmoud-09408b2a4" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
     </div>
   </footer>
+
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
