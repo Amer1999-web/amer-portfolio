@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Beyond the lab – Amer Alzoubi's personal interests: bodybuilding, oud, and guitar." />
+  <title>Amer Alzoubi | Hobbies & Interests</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Amer<span class="accent">.</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="hobby.html" class="active">Hobbies</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="content fade-in-up">
+    <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">Beyond the Lab</h1>
+    <p style="color: var(--text-dim); font-size: 1.15rem; margin-bottom: 2.5rem;">
+      When I’m not simulating materials, you’ll find me in the gym or immersed in music.
+    </p>
+
+    <div class="grid">
+      <!-- Bodybuilding Card with Photo -->
+      <div class="card" style="padding: 2rem; text-align: center;">
+        <img src="images/gym.jpg" 
+             alt="Amer Alzoubi bodybuilding"
+             style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; 
+                    border: 3px solid var(--accent); margin-bottom: 1.5rem;
+                    box-shadow: 0 8px 24px rgba(0,0,0,0.3);" />
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">
+          <i class="fas fa-dumbbell" style="color: var(--accent); margin-right: 0.5rem;"></i>Bodybuilding
+        </h2>
+        <p style="color: var(--text-dim); line-height: 1.8; max-width: 500px; margin: 0 auto;">
+          Discipline, consistency, and continuous improvement—principles that drive both my research and my training.
+          Weightlifting and bodybuilding teach me resilience and the power of incremental progress, 
+          whether I’m chasing a new personal record or refining a DFT workflow.
+        </p>
+      </div>
+
+      <!-- Oud & Guitar Card -->
+      <div class="card" style="padding: 2rem;">
+        <div style="font-size: 2rem; color: var(--accent); margin-bottom: 1rem; text-align: center;">
+          <i class="fas fa-guitar"></i>
+        </div>
+        <h2 style="font-size: 1.6rem; margin-bottom: 1rem; text-align: center;">Oud & Guitar</h2>
+        <p style="color: var(--text-dim); line-height: 1.8;">
+          Music is my creative counterbalance. I play the <strong>oud</strong>—a traditional Arabic instrument with a deep,
+          resonant soul—and the <strong>guitar</strong>, exploring everything from classical fingerstyle to modern ambient soundscapes.
+          Both instruments help me unwind, sharpen my focus, and see patterns in a different light.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Amer Alzoubi · Computational Materials Science &amp; Machine Learning</p>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://linkedin.com/in/amer-almahmoud-09408b2a4" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
