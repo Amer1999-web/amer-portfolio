@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV | Amer</title>
+  <meta name="description" content="Curriculum Vitae of Amer Alzoubi – Computational materials scientist, physicist, and AI-driven researcher." />
+  <title>Amer Alzoubi | Curriculum Vitae</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="nav">
+    <div class="nav-container">
       <div class="logo">Amer<span class="accent">.</span></div>
       <nav>
         <ul>
@@ -22,21 +28,237 @@
     </div>
   </header>
 
-  <section class="content">
-    <h2>Curriculum Vitae</h2>
-    <p>
-      M.Sc. Physics (Materials Science). Researcher focused on hydrogen storage,
-      DFT modeling, and machine learning applications in materials science.
-    </p>
-    <ul>
-      <li>Proficient in Wien2k, VASP workflows, Python, and ML frameworks.</li>
-      <li>Published 8+ papers in high-impact journals.</li>
-      <li>Interest: AI-assisted materials discovery.</li>
-    </ul>
-    <a href="CV_Amer_Alzoubi.pdf" class="btn" download>Download CV (PDF)</a>
-  </section>
+  <main class="content fade-in-up">
+    <!-- CV Header -->
+    <section style="margin-bottom: 2.5rem;">
+      <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">Amer Alzoubi</h1>
+      <p style="color: var(--text-dim); font-size: 1.1rem;">Computational Materials Scientist · Physicist · AI‑Driven Researcher</p>
+      <div class="contact-details" style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1.2rem; color: var(--muted); font-size: 0.95rem;">
+        <span><i class="fas fa-map-marker-alt" style="color: var(--accent); margin-right: 0.4rem;"></i>Irbid, Jordan</span>
+        <span><i class="fas fa-envelope" style="color: var(--accent); margin-right: 0.4rem;"></i>amalmahmoud21@sci.just.edu.jo</span>
+        <span><i class="fas fa-phone" style="color: var(--accent); margin-right: 0.4rem;"></i>+962 780560759</span>
+        <span><i class="fab fa-orcid" style="color: var(--accent); margin-right: 0.4rem;"></i>ORCID: 0009-0007-7805-354X</span>
+        <span><i class="fab fa-linkedin-in" style="color: var(--accent); margin-right: 0.4rem;"></i>LinkedIn</span>
+      </div>
+      <p style="color: var(--muted); font-size: 0.85rem; margin-top: 0.8rem; font-style: italic;">Publications appear under the name Amer Almahmoud.</p>
+    </section>
 
-  <footer>© <span id="year"></span> Amer</footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <!-- Education -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-graduation-cap" style="color: var(--accent);"></i>Education
+      </h2>
+      <div style="margin-bottom: 1.2rem;">
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.15rem; margin-bottom: 0.3rem;">M.Sc. in Physics</h3>
+        <p style="color: var(--text-dim); margin-bottom: 0.2rem;">Jordan University of Science and Technology (JUST), Irbid, Jordan</p>
+        <p style="color: var(--muted); font-size: 0.95rem;">
+          <span style="font-weight: 500;">GPA:</span> 3.96/4.0 (Excellent) · <strong>1<sup>st</sup> rank</strong> class of 2024
+        </p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1.15rem; margin-bottom: 0.3rem;">B.Sc. in Physics</h3>
+        <p style="color: var(--text-dim); margin-bottom: 0.2rem;">Jordan University of Science and Technology (JUST), Irbid, Jordan</p>
+        <p style="color: var(--muted); font-size: 0.95rem;">
+          <span style="font-weight: 500;">GPA:</span> 3.86/4.0 (Excellent) · <strong>3<sup>rd</sup> rank</strong> class of 2021
+        </p>
+      </div>
+    </div>
+
+    <!-- Research Interests -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-flask" style="color: var(--accent);"></i>Research Interests
+      </h2>
+      <p style="color: var(--text-dim); line-height: 1.8;">
+        Condensed Matter Physics, Density Functional Theory (DFT), Spintronics, Atomistic Spin Dynamics, Micromagnetic Simulation, 
+        Quantum Computing, Superconductor Materials, Quantum Information, Spin Dynamics, Topological Materials, Solid‑State Batteries, 
+        2D Materials, Heterostructures, Hydrogen Storage, Quantum Machine Learning, Machine Learning & Deep Learning in Materials Science.
+      </p>
+    </div>
+
+    <!-- Research Experience -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-microscope" style="color: var(--accent);"></i>Research Experience
+      </h2>
+      <div style="margin-bottom: 1.5rem;">
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 0.2rem;">Research Assistant</h3>
+        <p style="color: var(--text-dim); margin-bottom: 0.2rem;">Jordan University of Science and Technology (JUST), Irbid, Jordan</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem;">March 2024 – Present | Supervisor: Prof. Abdalla Obeidat</p>
+        <ul style="color: var(--text-dim); padding-left: 1.2rem; margin-top: 0.4rem;">
+          <li>Investigated magnetic, mechanical, optical, and thermodynamic properties of various materials using DFT and Monte Carlo methods.</li>
+          <li>Conducted research on machine learning applications in material science.</li>
+          <li>Studied high entropy alloys for their magnetic and hydrogen storage properties.</li>
+          <li>Explored hydrogen storage capabilities in perovskite and high entropy alloys.</li>
+          <li>Developed solid‑state Li batteries and explored 2D material heterostructures.</li>
+          <li>Developed micromagnetic models and utilized numerical methods for domain wall dynamics in nanowires.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 0.2rem;">Research Assistant</h3>
+        <p style="color: var(--text-dim); margin-bottom: 0.2rem;">Jordan University of Science and Technology (JUST), Irbid, Jordan</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem;">February 2023 – March 2024 | Supervisor: Prof. Maen Gharaibeh</p>
+        <ul style="color: var(--text-dim); padding-left: 1.2rem; margin-top: 0.4rem;">
+          <li>Studied magnetic, mechanical, optical, and thermodynamic properties using DFT and Monte Carlo methods.</li>
+          <li>Conducted spintronic studies focusing on atomic spin dynamics.</li>
+        </ul>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.5rem;"><strong>Thesis:</strong> Studying Structural, Electronic, Magnetic, and Thermomagnetic Properties of Doped Full Heusler Alloys Using Density Functional Theory and Monte Carlo Simulation</p>
+      </div>
+    </div>
+
+    <!-- Teaching Experience -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-chalkboard-teacher" style="color: var(--accent);"></i>Teaching Experience
+      </h2>
+      <div>
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 0.2rem;">Teacher Assistant</h3>
+        <p style="color: var(--text-dim); margin-bottom: 0.2rem;">Jordan University of Science and Technology, Irbid, Jordan</p>
+        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 0.5rem;">February 2022 – February 2023</p>
+        <p style="color: var(--text-dim);">Assisted in General Physics labs, emphasizing mechanics and electricity (Phys 107).</p>
+      </div>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-code" style="color: var(--accent);"></i>Technical Skills
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; color: var(--text-dim);">
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">DFT Software</h4><p>VASP, Quantum Espresso, SIESTA, Wien2k, ELK, CASTEP, QuantumATK</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">CPA Software</h4><p>EMTO-CPA, SPRKKR, AkaiKKR, MuST</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Structure Prediction</h4><p>USPEX, ATAT, Aflow</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Molecular Dynamics</h4><p>GROMACS, LAMMPS</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Micromagnetic Simulation</h4><p>MuMax3, OOMMF, Nmag</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Atomic Spin Dynamics</h4><p>UppASD, Vampire</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Quantum Computing</h4><p>Qiskit, Cirq, PennyLane</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Programming Languages</h4><p>Python, Julia, Fortran, C++, C, MATLAB, R, JavaScript, C#, Wolfram Mathematica</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">ML / DL</h4><p>TensorFlow, PyTorch, scikit‑learn</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Parallel Programming</h4><p>OpenMP, MPI, OpenACC</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Visualization</h4><p>VESTA, XCrySDen, Blender, POV‑Ray</p></div>
+        <div><h4 style="font-weight: 600; color: var(--accent); margin-bottom: 0.3rem; font-size: 0.95rem;">Data Analysis & DB</h4><p>OriginLab, Gnuplot, SQL</p></div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-language" style="color: var(--accent);"></i>Languages
+      </h2>
+      <p style="color: var(--text-dim);"><strong>Arabic:</strong> Native · <strong>English:</strong> Fluent</p>
+    </div>
+
+    <!-- Honors and Awards -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-award" style="color: var(--accent);"></i>Honors & Awards
+      </h2>
+      <ul style="color: var(--text-dim); padding-left: 1.2rem;">
+        <li>Research Grant: A Comparative Study of Structural Electronic and Magnetic Properties and Half‑Metallic Behavior of Full‑Heusler Alloys (DFT & Monte Carlo)</li>
+        <li>Distinguished Teaching Assistant Scholarship</li>
+        <li>Inclusion in the University Honor List</li>
+      </ul>
+    </div>
+
+    <!-- Selected Projects -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-project-diagram" style="color: var(--accent);"></i>Selected Projects
+      </h2>
+      <ul style="color: var(--text-dim); padding-left: 1.2rem;">
+        <li>Two‑Dimensional Ising Model explored using Effective Field Theory</li>
+        <li>Deep learning methods for PET image reconstruction</li>
+        <li>Spintronics: fundamental principles and applications</li>
+        <li>Micromagnetic finite‑difference code (Python)</li>
+        <li>Majorana Fermions: in‑depth research and potential applications</li>
+        <li>Machine learning for predicting material properties (band gap, lattice parameter)</li>
+      </ul>
+    </div>
+
+    <!-- Editorial & Peer Review – FULL BREAKDOWN -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-pen-fancy" style="color: var(--accent);"></i>Editorial & Peer Review Activities
+      </h2>
+      <div style="margin-bottom: 1rem;">
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; color: var(--text); font-size: 1rem; margin-bottom: 0.2rem;">Editor‑in‑Chief</h3>
+        <p style="color: var(--text-dim);">Journal of Theoretical, Experimental, and Applied Physics (ISSN: 3070-6505) | 2026 – Present</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; color: var(--text); font-size: 1rem; margin-bottom: 0.5rem;">Reviewer</h3>
+        <ul style="color: var(--text-dim); padding-left: 1.2rem; list-style-type: none; display: flex; flex-direction: column; gap: 0.3rem;">
+          <li>· International Journal of Hydrogen Energy (Elsevier) – 22 reviews</li>
+          <li>· APL Photonics (AIP Publishing) – 10 reviews</li>
+          <li>· Applied Physics Letters (AIP Publishing) – 9 reviews</li>
+          <li>· APL Machine Learning (AIP Publishing) – 8 reviews</li>
+          <li>· Journal of Applied Physics (AIP Publishing) – 7 reviews</li>
+          <li>· Journal of Energy Storage (Elsevier) – 5 reviews</li>
+          <li>· AIP Advances (AIP Publishing) – 4 reviews</li>
+          <li>· Chemical Physics (Elsevier) – 3 reviews</li>
+          <li>· Computational and Theoretical Chemistry (Elsevier) – 3 reviews</li>
+          <li>· Inorganic Chemistry Communications (Elsevier) – 2 reviews</li>
+        </ul>
+        <div style="margin-top: 1rem; padding-top: 0.8rem; border-top: 1px solid var(--border-light); display: flex; align-items: center; gap: 0.6rem; color: var(--accent); font-weight: 500;">
+          <i class="fas fa-check-circle"></i>
+          <span>Completed <strong>73 peer reviews</strong> across 10 journals</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Publications (compact list with DOIs) -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-book-open" style="color: var(--accent);"></i>Selected Publications
+      </h2>
+      <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.8rem;">Full list on the <a href="publications.html" style="color: var(--accent);">Publications page</a>. Names shown as published (Amer Almahmoud).</p>
+      <ol style="color: var(--text-dim); padding-left: 1.2rem; line-height: 1.8;">
+        <li>Comprehensive DFT Analysis of … Y₂CoH₆ … <em>J. Energy Storage</em> (2025). <a href="https://doi.org/10.1016/j.est.2025.116146" target="_blank" style="color: var(--accent);">DOI</a></li>
+        <li>Mechanical, Structural, Electronic, Magnetic … Fe2MnAs1−xSix … <em>Sci. Rep.</em> (2024). <a href="https://doi.org/10.1038/s41598-024-82354-2" target="_blank" style="color: var(--accent);">DOI</a></li>
+        <!-- … rest of publications (identical to previous version) … -->
+      </ol>
+    </div>
+
+    <!-- References -->
+    <div class="card" style="margin-bottom: 2rem;">
+      <h2 style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+        <i class="fas fa-user-check" style="color: var(--accent);"></i>References
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div>
+          <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem;">Prof. Maen Gharaibeh</h3>
+          <p style="color: var(--text-dim); font-size: 0.95rem;">
+            Full Professor, Dept. of Applied Physical Sciences<br>
+            Jordan University of Science and Technology<br>
+            <span style="color: var(--muted);">Master’s Supervisor</span><br>
+            <a href="mailto:magh@just.edu.jo" style="color: var(--accent);">magh@just.edu.jo</a>
+          </p>
+        </div>
+        <div>
+          <h3 style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: 1rem; margin-bottom: 0.2rem;">Prof. Abdalla Obeidat</h3>
+          <p style="color: var(--text-dim); font-size: 0.95rem;">
+            Full Professor, Dept. of Applied Physical Sciences<br>
+            Jordan University of Science and Technology<br>
+            <span style="color: var(--muted);">Master’s Co‑advisor</span><br>
+            <a href="mailto:aobeidat@just.edu.jo" style="color: var(--accent);">aobeidat@just.edu.jo</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Amer Alzoubi · Computational Materials Science &amp; Machine Learning</p>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://linkedin.com/in/amer-almahmoud-09408b2a4" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

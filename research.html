@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research | Amer</title>
+  <meta name="description" content="Research overview of Amer Alzoubi – hydrogen storage, DFT, Monte Carlo, machine learning, spintronics, and quantum computing." />
+  <title>Amer Alzoubi | Research</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <div class="nav">
+    <div class="nav-container">
       <div class="logo">Amer<span class="accent">.</span></div>
       <nav>
         <ul>
@@ -22,34 +28,71 @@
     </div>
   </header>
 
-  <section class="content">
-    <h2>Research & Projects</h2>
+  <main class="content fade-in-up">
+    <h1 style="font-size: 2.8rem; margin-bottom: 0.5rem;">Research</h1>
+    <p style="color: var(--text-dim); font-size: 1.1rem; margin-bottom: 2.5rem;">
+      Bridging first‑principles theory, Monte Carlo simulations, and artificial intelligence to design next‑generation energy and functional materials.
+    </p>
+
     <div class="grid">
       <div class="card">
-        <h3>Hydrogen Storage Materials</h3>
+        <h3><i class="fas fa-atom" style="color: var(--accent); margin-right: 0.5rem;"></i> Hydrogen Storage Materials</h3>
         <p>
-          Investigating structural and thermodynamic stability of perovskite-type
-          hydrides using DFT and thermodynamic models.
+          Density Functional Theory (DFT) and thermodynamic modelling of perovskite, double‑perovskite and high‑entropy hydrides. 
+          Emphasis on gravimetric capacity, thermodynamic stability, and mechanical properties.
         </p>
       </div>
       <div class="card">
-        <h3>ML for Property Prediction</h3>
+        <h3><i class="fas fa-brain" style="color: var(--accent); margin-right: 0.5rem;"></i> Machine Learning & Quantum ML</h3>
         <p>
-          Using Random Forests, SVMs, and Neural Networks to predict band gap,
-          bulk modulus, and magnetic properties of hydrides.
+          Predicting band gaps, lattice parameters, and elastic constants using random forests, support vector machines, deep neural networks, 
+          and quantum‑enhanced models (QSVR). Interpretability via SHAP and feature engineering.
         </p>
       </div>
       <div class="card">
-        <h3>Monte Carlo & Spin Models</h3>
+        <h3><i class="fas fa-magnet" style="color: var(--accent); margin-right: 0.5rem;"></i> Monte Carlo & Spin Dynamics</h3>
         <p>
-          Simulation of magnetization and Curie temperature in 2D Heisenberg
-          models, implementing LLG dynamics.
+          Atomistic spin simulations and micromagnetic modelling (MuMax3, UppASD) for full‑Heusler alloys, domain wall dynamics, and 
+          Curie temperature prediction. Integration with DFT for exchange couplings.
+        </p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-microchip" style="color: var(--accent); margin-right: 0.5rem;"></i> Spintronics & Topological Materials</h3>
+        <p>
+          Electronic structure and spin‑dependent transport in half‑metallic Heusler alloys, topological insulators, and 2D heterostructures. 
+          Exploration of Majorana fermions for quantum computing.
+        </p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-battery-full" style="color: var(--accent); margin-right: 0.5rem;"></i> Solid‑State Batteries & 2D Materials</h3>
+        <p>
+          First‑principles study of Li‑ion diffusion in MXenes and novel electrode materials. Design of solid electrolytes and 
+          analysis of 2D material heterostructures for energy storage.
+        </p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-code" style="color: var(--accent); margin-right: 0.5rem;"></i> Method Development</h3>
+        <p>
+          Python‑based micromagnetic finite‑difference codes, high‑throughput DFT workflows, and integration of OpenMP/MPI for 
+          large‑scale materials simulations.
         </p>
       </div>
     </div>
-  </section>
+  </main>
 
-  <footer>© <span id="year"></span> Amer</footer>
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="year"></span> Amer Alzoubi · Computational Materials Science &amp; Machine Learning</p>
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://linkedin.com/in/amer-almahmoud-09408b2a4" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
